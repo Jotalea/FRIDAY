@@ -14,12 +14,14 @@ using json = nlohmann::json;
 // Safe function to get HOME
 std::string get_home_dir() {
     const char* home = getenv("HOME");
-    return (home ? std::string(home) : "/data/data/com.termux/files/home");
+    return (home ? std::string(home) : "/data/data/com.termux/files/home"); // path for Termux
 }
 
 // Configuration
 const std::string API_URL       = "https://jotalea.com.ar/api/gemini.php";
-const std::string API_KEY       = "IAmAHorriblePersonAndIAmStealingSomeonesData";
+// note that all unauthorized calls using this key WILL be logged
+const std::string API_KEY       = "IAmAHorriblePersonAndIAmStealingSomeone" + "sData";
+// generate your own API key for free on https://aistudio.google.com/app/apikey
 const fs::path    CONFIG_DIR    = get_home_dir() + "/.friday";
 const fs::path    HISTORY_FILE  = CONFIG_DIR / "history.log";
 
