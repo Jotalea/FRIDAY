@@ -32,6 +32,9 @@ the source is available through git on https://github.com/Jotalea/FRIDAY.git [3]
 ## dependencies
 requires libcurl and json.hpp (included)
 
+## why
+why not. also I wanted to try C++. this project should've taken me 5 minutes, but took me 2 whole weeks.
+
 ## notes
 [1] FRIDAY may work on non-Linux systems, but that is not its intended purpose
 
