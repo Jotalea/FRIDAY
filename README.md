@@ -34,5 +34,7 @@ requires libcurl and json.hpp (included)
 
 ## notes
 [1] FRIDAY may work on non-Linux systems, but that is not its intended purpose
+
 [2] by default, the execution of the suggested command is set to "Cancel", so you can avoid accidentally allowing it to run unwanted scripts
+
 [3] licensed under the MIT License
